@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  counter-app:
+    build: .
+    image: fsharp-counter-app:latest
+    container_name: fsharp-counter-app
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./data:/app/data
+    restart: unless-stopped
+    environment:
+      - ASPNETCORE_URLS=http://+:5000
+      - ASPNETCORE_ENVIRONMENT=Production
+    networks:
+      - counter-network
+
+networks:
+  counter-network:
+    driver: bridge
+
+volumes:
+  data:
+    driver: local

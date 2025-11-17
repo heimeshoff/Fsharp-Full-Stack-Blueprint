@@ -1,0 +1,9 @@
+bin/
+obj/
+node_modules/
+dist/
+data/
+.fake/
+.ionide/
+*.user
+.DS_Store

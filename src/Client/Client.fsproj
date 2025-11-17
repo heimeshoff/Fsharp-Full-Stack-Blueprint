@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Types.fs" />
+    <Compile Include="Api.fs" />
+    <Compile Include="State.fs" />
+    <Compile Include="View.fs" />
+    <Compile Include="App.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Fable.Core" Version="4.3.0" />
+    <PackageReference Include="Fable.Elmish" Version="4.1.0" />
+    <PackageReference Include="Fable.Elmish.React" Version="4.0.0" />
+    <PackageReference Include="Fable.Elmish.Debugger" Version="4.0.2" />
+    <PackageReference Include="Fable.Elmish.HMR" Version="7.0.0" />
+    <PackageReference Include="Feliz" Version="2.9.0" />
+    <PackageReference Include="Fable.Remoting.Client" Version="7.32.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../Shared/Shared.fsproj" />
+  </ItemGroup>
+</Project>

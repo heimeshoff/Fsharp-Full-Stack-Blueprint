@@ -1,0 +1,10 @@
+node_modules/
+bin/
+obj/
+dist/
+data/
+.git/
+.gitignore
+*.md
+.fake/
+.ionide/
